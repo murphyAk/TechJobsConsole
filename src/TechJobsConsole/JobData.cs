@@ -153,16 +153,8 @@ namespace TechJobsConsole
                     if (data.Value.ToLower().Contains(match.ToLower()))
                     {
                         matches.Add(AllJobs[i]);
+                        break;
                     }
-                }
-            }
-
-
-            for (int i=0; i < matches.Count; i++)
-            {
-                if (matches.Contains(matches[i]))
-                {
-                    matches.Remove(matches[i]);
                 }
             }
 
